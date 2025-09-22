@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6d2e2e, #a74848);
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.todo-card {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+}
+
+.todo-card h2 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #6d2e2e;
+}
+
+form button {
+  background-color: #6d2e2e;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 12px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaça os itens */
+  padding: 12px 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  cursor: pointer;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex-grow: 1; 
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 20px; 
+  text-align: center;
+}
+
+
+li.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 50%;
+  line-height: 1;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #f0f0f0;
+}
