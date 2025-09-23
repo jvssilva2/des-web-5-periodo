@@ -5,7 +5,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
-  
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (inputValue.trim() === '') return;
