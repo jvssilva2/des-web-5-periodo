@@ -174,10 +174,10 @@ export default function Home() {
                             profileImage={ProfileImageTwo}
                         />
 
-                        <CarouselCard
-                            name='joao da silva'
-                            title='estudante de engenharia de software'
-                            testimonial='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                         <CarouselCard
+                            name='Cristiano Ronaldo'
+                            title='Jogador de Futebol'
+                            testimonial='A Cuca é muito boa, macia e saborosa. é sensacional! SIIIIUUUU!!!!!!!'
                             rating={5}
                             profileImage={ProfileImageTree}
                         />
