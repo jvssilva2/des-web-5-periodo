@@ -5,6 +5,8 @@ import '../styles/hero.css'
 import '../styles/solution.css'
 import '../styles/testimonials.css'
 import '../styles/pricing.css'
+import '../styles/contact.css'
+import '../styles/footer.css'
 import Logo from "../assets/marlisaboreslogo.svg"
 import { useState } from 'react'
 import Button from '../components/Button'
@@ -15,9 +17,10 @@ import Close from "../assets/close.svg"
 import Check from "../assets/check.svg"
 import Card from '../components/Cards'
 import CarouselCard from '../components/CarouselCard'
-import ProfileImageOne from "../assets/images/perfilum.png"
-import ProfileImageTwo from "../assets/images/perfildois.png"
+import ProfileImageOne from "../assets/images/perfilum.webp"
+import ProfileImageTwo from "../assets/images/perfildois.webp"
 import ProfileImageTree from "../assets/images/perfiltres.webp"
+import RedesSociais from "../assets/redessociais.svg"
 
 
 export default function Home() {
@@ -134,9 +137,9 @@ export default function Home() {
                     </p>
                 </header>
                 <section className="even-columns">
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' />
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' />
-                    <Card titulo='Produto Vencedor' paragrafo='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, excepturi dolorem. Nisi dolores ipsam natus fugit accusamus sed minima, dolore autem enim unde nam iusto non. Architecto inventore sunt maiores!' />
+                    <Card titulo='Ingredientes Selecionados' paragrafo='Nada de massa industrializada. Aqui usamos frutas frescas, farinha de qualidade e aquele toque caseiro que você ama.' />
+                    <Card titulo='Pedido fácil e Rápido' paragrafo='Vendas sob encomenda e entregas sem cobrança de frete' />
+                    <Card titulo='Sabor com Preço Justo' paragrafo='O sabor caseiro autêntico das receitas de família,com preço justo.' />
 
                 </section>
 
@@ -151,33 +154,32 @@ export default function Home() {
                         <h2>Cada cliente importa!</h2>
                     </span>
                     <p>
-                        Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
-                        comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                        Quem já pediu sabe da qualidade das nossas receitas, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
                     </p>
                 </header>
 
                 <section className="carousel">
                     <div className="carousel-content">
                         <CarouselCard
-                            name='joao da silva'
-                            title='estudante de engenharia de software'
-                            testimonial='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                            rating={4}
+                            name='Lázaro Ramos'
+                            title='Ator'
+                            testimonial='A cuca de doce de leite com coco é uma delicia, é perfeita para um café da tarde de domingo.'
+                            rating={5}
                             profileImage={ProfileImageOne}
                         />
 
                         <CarouselCard
-                            name='joao da silva'
-                            title='estudante de engenharia de software'
-                            testimonial='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                            rating={2}
+                            name='Lionel Messi'
+                            title='Jogador de Futebol'
+                            testimonial='Encomendei uma cuca de abacaxi com coco, é simplismente dos deuses!'
+                            rating={5}
                             profileImage={ProfileImageTwo}
                         />
 
-                         <CarouselCard
+                        <CarouselCard
                             name='Cristiano Ronaldo'
                             title='Jogador de Futebol'
-                            testimonial='A Cuca é muito boa, macia e saborosa. é sensacional! SIIIIUUUU!!!!!!!'
+                            testimonial='A Cuca é muito boa, macia e saborosa. A dona Marli tem o dom, até os mais exigentes aprovaram. É a melhor!!! SIIIIUUUU!!!!!!!'
                             rating={5}
                             profileImage={ProfileImageTree}
                         />
@@ -185,18 +187,18 @@ export default function Home() {
 
                     <div className="carousel-content">
                         <CarouselCard
-                            name='joao da silva'
-                            title='estudante de engenharia de software'
-                            testimonial='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                            rating={4}
+                            name='Lázaro Ramos'
+                            title='Ator'
+                            testimonial='A cuca de doce de leite com coco é uma delicia, é perfeita para um café da tarde de domingo.'
+                            rating={5}
                             profileImage={ProfileImageOne}
                         />
 
                         <CarouselCard
-                            name='joao da silva'
-                            title='estudante de engenharia de software'
-                            testimonial='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-                            rating={2}
+                            name='Lionel Messi'
+                            title='Jogador de Futebol'
+                            testimonial='Encomendei uma cuca de abacaxi com coco, é simplismente dos deuses!'
+                            rating={5}
                             profileImage={ProfileImageTwo}
                         />
 
@@ -222,56 +224,128 @@ export default function Home() {
                 <section className="even-columns gap-1.5">
                     <div className="pricing-card">
                         <span className="plan">
-                            <h3>Básico</h3>
-                            <p>Você tem direito a uma prova das comidas DonaFrost.</p>
+                            <h3>Tradicionais</h3>
+                            <p>Sabores clássicos que todo mundo ama. Aquele gostinho de infância.</p>
                         </span>
-                        <h2>Grátis</h2>
+                        <h2>R$ 12,00</h2>
                         <Button text="Pedir agora" secondary key="free" />
                         <span className="hr" /><span className="features">
                             <img src={Check} alt="ícone check" width={24} height={24} />
-                            <p>Retire na loja</p>
+                            <p>Encomendar</p>
                         </span>
                         <ul className="features">
                             <li>
                                 <img src={Check} alt="ícone check" width={24} height={24} />
-                                <p>Apenas 1 por CPF</p>
+                                <p>Goiabada</p>
                             </li>
                         </ul>
                     </div>
 
                     <div className="pricing-card premium">
                         <span className="bonus">
-                            <p>1º MÊS COM DESCONTO</p>
+                            <p>Doce de Leite</p>
                         </span>
                         <span className="plan">
-                            <h3>Premium</h3>
-                            <p>Para quem precisa de uma marmita diária, muito saborosa.</p>
+                            <h3>Pães</h3>
+                            <p>Pão branco
+                                pão de fubá
+                                pão integral</p>
                         </span>
                         <span className="price">
-                            <h2>R$ 89,90</h2>
+                            <h2>R$ 10,00</h2>
                             <p>/mês</p>
                         </span>
                         <Button text="Pedir agora" key="premium" />
                         <span className="hr" />
                         <span className="features">
                             <img src={Check} alt="ícone check" width={24} height={24} />
-                            <p>2 Entregas</p>
+                            <p>Entregas</p>
                         </span>
                         <span className="features">
                             <img src={Check} alt="ícone check" width={24} height={24} />
-                            <p>5 Refeições por semana</p>
+                            <p>Bolos</p>
                         </span>
                         <span className="features">
                             <img src={Check} alt="ícone check" width={24} height={24} />
-                            <p>2 Sucos por semana</p>
+                            <p>Chocolate com Morango
+                                4 leites
+                                Frutas
+                                Bombom
+                            </p>
                         </span>
                     </div>
                 </section>
             </section>
+            <section id="contact" className="container">
+                <header>
+                    <p>Envie sua dúvida</p>
+                    <h2>Entre em contato</h2>
+                    <p>
+                        Entre em contato, estamos dispostos a tirar qualquer dúvida,
+                        seja sobre o seu pedido.
+                        Estamos à disposição para responder!
+                    </p>
+                </header>
 
+                <form>
+                    <input
+                        type="email"
+                        placeholder="Seu melhor Email"
+                    />
+                    <textarea
+                        placeholder="Motivo do contato. Ex: Poderia fazer alguma encomenda especifica?"
+                    />
 
+                    <div className="btn-wrapper">
+                        <Button text="Enviar" />
+                    </div>
+                </form>
+            </section>
 
+            <footer id="footer">
+                <div className="container footer-content">
 
+                    <div className="logo-column">
+                        <img src={Logo} alt="Logo" width={280} height={120} />
+                        <div className="social-links">
+                            <a href="#"><img src={RedesSociais} alt="Redes Sociais" height={24} /></a>
+
+                        </div>
+                    </div>
+
+                    <div className="footer-links">
+                        <div className="links-column">
+                            <h3>Empresa</h3>
+                            <ul>
+                                <li><a href="#">Sobre nós</a></li>
+                                <li><a href="#">Faça parte do time</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div className="links-column">
+                            <h3>Funcionalidades</h3>
+                            <ul>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Análise de dados</a></li>
+                                <li><a href="#">Boot discord</a></li>
+                            </ul>
+                        </div>
+                        <div className="links-column">
+                            <h3>Recursos</h3>
+                            <ul>
+                                <li><a href="#">iOS & Android</a></li>
+                                <li><a href="#">Teste a Demo</a></li>
+                                <li><a href="#">Clientes</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="footer-bar">
+                    <p>Feito para resgatar aquela lembrança da infância  ©2025</p>
+                </div>
+            </footer>
         </>
     )
 }

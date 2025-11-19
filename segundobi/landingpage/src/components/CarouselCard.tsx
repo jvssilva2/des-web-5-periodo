@@ -15,6 +15,13 @@ export default function CarouselCard(props: ICarouselCardProps) {
 
         <div className="carousel-card">
             <img src={props.profileImage} alt="Imagem perfil cliente" />
+            
+            
+            <span className="names">
+                <p className="name-text">{props.name}</p>
+                <p className="title-text">{props.title}</p>
+            </span>
+            
             <span className="testimony">
                 <p>
                     {props.testimonial}
@@ -27,10 +34,6 @@ export default function CarouselCard(props: ICarouselCardProps) {
                 {Array(5 - props.rating).fill(0).map((_, index) => (
                     <img key={index} src={StarOuter} alt="ícone estrela sem fundo" width={20} height={22} />
                 ))}
-            </span>
-            <span className="names">
-                <p>{props.name}</p>
-                <p>{props.title}</p>
             </span>
         </div>
     )
