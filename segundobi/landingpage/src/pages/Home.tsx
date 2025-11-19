@@ -1,5 +1,4 @@
-import '../styles/header.css'
-import '../styles/utility.css'
+import '../styles/Header.css'
 import '../styles/hero.css'
 import '../styles/solution.css'
 import '../styles/testimonials.css'
