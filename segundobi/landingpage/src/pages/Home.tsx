@@ -1,4 +1,3 @@
-import '../home.css'
 import '../styles/header.css'
 import '../styles/utility.css'
 import '../styles/hero.css'
@@ -9,14 +8,14 @@ import '../styles/contact.css'
 import '../styles/footer.css'
 import Logo from "../assets/marlisaboreslogo.svg"
 import { useState } from 'react'
-import Button from '../components/Button'
+import Button from '../components/Button.tsx'
 import RectangleOne from "../assets/images/RectangleOne.png"
 import RectangleTwo from "../assets/images/RectangleTwo.png"
 import Menu from "../assets/menu.svg"
 import Close from "../assets/close.svg"
 import Check from "../assets/check.svg"
-import Card from '../components/Cards'
-import CarouselCard from '../components/CarouselCard'
+import Card from '../components/Cards.tsx'
+import CarouselCard from '../components/CarouselCard.tsx'
 import ProfileImageOne from "../assets/images/perfilum.webp"
 import ProfileImageTwo from "../assets/images/perfildois.webp"
 import ProfileImageTree from "../assets/images/perfiltres.webp"
