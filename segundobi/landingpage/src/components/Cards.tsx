@@ -13,7 +13,7 @@ export default function Card({ titulo, paragrafo }: CardProps) {
             <span>
                 <img src={menu} alt="pedido" width={64} height={64} />
             </span>
-            <div>
+            <div  className="divteste">
                 <h3>
                     {titulo}
                 </h3>
