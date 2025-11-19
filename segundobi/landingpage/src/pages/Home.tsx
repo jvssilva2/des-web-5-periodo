@@ -25,7 +25,7 @@ import RedesSociais from "../assets/redessociais.svg"
 
 export default function Home() {
 
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false); 
 
     return (
         <>
