@@ -1,4 +1,4 @@
-import '../Home.css'
+import '../home.css'
 import '../styles/header.css'
 import '../styles/utility.css'
 import '../styles/hero.css'
